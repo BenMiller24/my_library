@@ -13,8 +13,8 @@ def process_bio(bio):
     if token.is_alpha and not token.is_oov and not token.is_stop:
      #looks good, add to good_tokens
       good_words += [token.text]
-  return good_words
-
+  return good_words  
+  
 def class_probability(training_table, a_class):
   class_list = training_table['Class'].to_list()  #the Class column as a list
   class_count = class_list.count(a_class)
